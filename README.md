@@ -15,6 +15,16 @@ The application contains a simple UI composed mainly of different menus. It incl
 
 Notes can be saved as classic files in a folder that the application creates. The simplest form of export is to move/copy the desired file from this folder. However, the application also allows for export based on categories, tags, or text using the UI (implemented as a multichoice menu). The application copies the selected files to CWD (the folder in which the application executable file is located). Importing is also possible via UI from CWD (so you can add categories to your files and open the files in the app).
 
+## Showcase
+### Main menu
+![MainMenu](https://user-images.githubusercontent.com/94016085/226111946-038ef46a-fa00-4f25-a878-93d00f5fcd10.png)
+
+### Markdown formatting
+![Markdown](https://user-images.githubusercontent.com/94016085/226111956-20b9d5b1-1d65-40ce-9f94-76e26041ebd3.png)
+
+### Search
+![Search](https://user-images.githubusercontent.com/94016085/226111966-54222a8a-b074-43ee-8546-fb512bece5a6.png)
+
 ## Memory leaks, Valgrind
 The Ncurses library causes a lot of memory problems, mainly with memory leaks and uninitialized internal variables. All available functions to release used memory resources are used in the program. To run the program with Valgrind, use the following command: "valgrind --leak-check=full --show-leak-kinds=all --log-file=ValgrindLog ./notepad" (= make valgrind) (the output is redirected to the file ValgrindLog, because if the application is interrupted, the ncurses terminal mode may not be properly terminated, which could lead to various problems - the terminal would probably need to be restarted). 
 
