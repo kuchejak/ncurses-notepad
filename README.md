@@ -4,7 +4,7 @@ This is a simple terminal note taking application written in C++ designed to wor
 
 ## Requirements for compilation
 - `ncurses` library 
-- c++ compilation tool (make by default use g++, but it can be changed in the Makefile)
+- c++ compilation tool (make by default uses g++, but it can be changed in the Makefile)
 
 ## Compile/Run
 - for compilation run `make`, which will create the application: `notepad` (name can be changed in Makefile)
